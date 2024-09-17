@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="150" height="801" viewBox="0 0 150 801">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="長方形_1383" data-name="長方形 1383" width="150" height="801" transform="translate(1250 1145)" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="長方形_1286" data-name="長方形 1286" width="1400" height="180" transform="translate(0 1057)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x2="0.733" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#b50000"/>
+      <stop offset="0.374" stop-color="#ad2800"/>
+      <stop offset="1" stop-color="#7c1c00"/>
+    </linearGradient>
+  </defs>
+  <g id="マスクグループ_38" data-name="マスクグループ 38" transform="translate(-1250 -1145)" clip-path="url(#clip-path)">
+    <g id="マスクグループ_6" data-name="マスクグループ 6" transform="translate(0 3.861)" clip-path="url(#clip-path-2)" style="mix-blend-mode: multiply;isolation: isolate">
+      <path id="パス_790" data-name="パス 790" d="M2217,2107.383H4130.51l-1913.51,180Z" transform="translate(-2217 -1050.571)" fill="url(#linear-gradient)" style="mix-blend-mode: multiply;isolation: isolate"/>
+    </g>
+    <g id="index_背景飾り文字_欧文_107pt" transform="translate(1215.5 1145.361)" style="mix-blend-mode: multiply;isolation: isolate">
+      <text id="About_us" data-name="About us" transform="translate(43) rotate(90)" fill="#f2f4f7" font-size="200" font-family="Lato-Bold, Lato" font-weight="700"><tspan x="0" y="0">About us</tspan></text>
+    </g>
+    <g id="あたりケイ" transform="translate(0 0.816)" fill="none" stroke="#d3d3d3" stroke-width="1">
+      <rect width="1400" height="5508.49" stroke="none"/>
+      <rect x="0.5" y="0.5" width="1399" height="5507.49" fill="none"/>
+    </g>
+  </g>
+</svg>
