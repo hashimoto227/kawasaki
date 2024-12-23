@@ -1,160 +1,225 @@
 <!DOCTYPE html>
 <html lang="ja">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>有限会社　川崎開発</title>
     <meta name="description" content="" />
-    
+
     <meta property="og:type" content="<!-- website -->" />
     <meta property="og:title" content="<!-- タイトル -->" />
     <meta property="og:image" content="<!-- /img/icon.png -->" />
     <meta property="og:url" content="<!-- http://example.net/ -->" />
     <meta property="og:site_name" content="<!-- サイト名 -->" />
     <meta property="og:description" content="<!-- ディスクリプション -->" />
-    
-    <meta name="robots" content="noarchive">
-    
-    <link rel="shortcut icon" href="./img/favicon.ico"> 
-    <link rel="stylesheet" type="text/css" href="./css/sanitize.css">
-    <link rel="stylesheet" type="text/css" href="./css/style.css">
 
-    <!-- GoogleFonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <meta name="robots" content="noarchive" />
 
+    <link rel="shortcut icon" href="./img/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="./css/sanitize.css" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link rel="stylesheet" type="text/css" href="./css/page.css" />
+
+    <script>
+      (function(d) {
+        var config = {
+          kitId: 'mnr4qxl',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+      })(document);
+    </script>
     <!-- fontawesome -->
-    <script src="https://kit.fontawesome.com/9d9779e958.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/9d9779e958.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body id="top">
     <header class="flex-jc-between">
-      <a href="/">
-        <h1><img src="img/logo_font_white.png" alt="有限会社川崎開発"></h1>
+      <a href="/" class="home_link">
+        <img
+          src="img/logo_font_white.png"
+          class="logo"
+          alt="有限会社川崎開発"
+        />
+        <img src="img/logo_gold.png" class="logo_gold" alt="有限会社川崎開発" />
       </a>
-      <nav>
+      <nav id="g-nav">
         <ul>
-          <li>会社案内</li>
-          <li>施工実績</li>
-          <li>採用情報</li>
-          <li>お問合せ</li>
+          <li>
+            <a href="">会社案内<span>Company</span></a>
+          </li>
+          <li>
+            <a href="">施工実績<span>Works</span></a>
+          </li>
+          <li>
+            <a href="">採用情報<span>Recruit</span></a>
+          </li>
+          <li class="contact-link">
+            <a href=""> お問い合わせ<span>Contact Us</span></a>
+          </li>
         </ul>
       </nav>
+      <div class="openbtn"><span></span><span></span><span></span></div>
     </header>
 
     <main>
       <div class="kv"><!-- メインビジュアル -->
-        <img src="img/catchcopy.png" alt="地域を繋ぐ。未来を創る。"><!-- 遅れてふわっと　背景徐々にズーム　スライド -->
-      <div class="slant-bg">
+        <div class="catch">
+          <img
+            src="./img/ロゴ_白.png"
+            alt="地域を繋ぐ。未来を創る。"
+          />
+          <p class="catch-top">一つひとつの仕事に</p>
+          <div class="border"></div>
+          <p class="catch-bottom">誠実を。</p>
+        </div>
+
+        <div class="slant-bg"></div>
+        <div class="slant-bg2 pc-only"></div>
       </div>
-      <div class="slant-bg2">
-      </div>
-      </div><!-- メインビジュアル  end-->
-      <section class="section01 ">
+      <!-- メインビジュアル  end-->
+      <section class="section01">
         <div class="container">
           <h2>川崎開発について</h2>
-          <div class=" top_about_img flex-jc-between ">
-            <img src="./img/top_about01.jpg" alt="" class="top_about01">
-            <img src="./img/top_about02.jpg" alt="" class="top_about02">
+          <div class="top_about_img flex-jc-between">
+            <img src="./img/top_about01.jpg" alt="" class="top_about01" />
+            <img src="./img/top_about02.jpg" alt="" class="top_about02 pc-only" />
           </div>
-          <p class="txt-right about_text">川崎開発は、福島県二本松市にある一般建設業の会社です。<br>
-            地域の人々のつながりを大切に、街づくりに貢献していきます。</p>
-          <p class="txt-right block-right button-width_base01"><a href="" class="button01">詳しく見る</a></p>
+          <p class="txt-right about_text">
+            川崎開発は、福島県二本松市にある一般建設業の会社です。<br />
+            地域の人々のつながりを大切に、街づくりに貢献していきます。
+          </p>
+          <p class="txt-right block-right button-width_base01">
+            <a href="" class="button01">詳しく見る</a>
+          </p>
         </div>
-        </section>
-        <div class="fixed-bg01">
-        </div>          
+      </section>
+      <div class="fixed-bg01"></div>
 
       <section class="section02">
+        <div class="jigyou01">
         <div class="container">
           <h2>事業内容</h2>
-          <div class="jigyou-image">
-            <img src="./img/jigyou01.png" alt=""><!-- 左から　シュシュシュッとかっこよく出てくる -->
-            <img src="./img/jigyou02.png" alt=""><!-- 左から　シュシュシュッとかっこよく出てくる -->
-            <img src="./img/jigyou03.png" alt=""><!-- 左から　シュシュシュッとかっこよく出てくる -->
-            <img src="./img/jigyou04.png" alt=""><!-- 左から　シュシュシュッとかっこよく出てくる -->
+        </div>
+          <div class="jigyou01_image pc-only">
+            <img
+              src="./img/jigyou01.png"
+              alt=""
+            /><!-- 左から　シュシュシュッとかっこよく出てくる -->
+            <img
+              src="./img/jigyou02.png"
+              alt=""
+            /><!-- 左から　シュシュシュッとかっこよく出てくる -->
+            <img
+              src="./img/jigyou03.png"
+              alt=""
+            /><!-- 左から　シュシュシュッとかっこよく出てくる -->
+            <img
+              src="./img/jigyou04.png"
+              alt=""
+            /><!-- 左から　シュシュシュッとかっこよく出てくる -->
           </div>
-          <p class="txt-right block-right button-width_base01"><a href="" class="button01">詳しく見る</a></p>
-          <div class="">
-            <img src="" alt=""><!-- 右から　すっと出てくる -->
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
+          <div class="jigyou01_image sp-only">
+            <img src="./img/jigyou01sp.jpg" alt="">
           </div>
-          <p style="clear: both;">山砂・重機の運搬も行っており、様々な現場での柔軟な対応が可能です。
-            山砂は販売も行っており、○○にご利用いただけます。
-            お気軽にお問合せ下さい。</p><!-- フワッと -->
-            <p><a href="">詳しく見る</a></p><!-- フワッと -->
+          <div class="container jisseki_btn">
+            <p class="txt-right block-right button-width_base01">
+              <a href="" class="button01">施工実績を見る</a>
+            </p>
           </div>
+        </div>
+        <div class="jigyou02">
+          <div class="jigyou02_imageArea">
+          <div class="jigyou02_image">
+            <img src="./img/jigyou-image02.png" alt="" class="pc-only"/>
+            <img src="./img/jigyou-image02sp.png" alt="" class="sp-only"/>
+            <div class="taioukanou">
+              <p>こんなことにも対応可能！</p>
+              <p>山砂販売・残土処分受入・<br class="sp-only">土砂等運搬・重機運搬</p></div>
+          </div>
+
+          </div>
+          <div class="container">
+            <div class="jigyou02_textArea">
+              <p class="jigyou02_text">山砂販売・残土処分受入・土砂等運搬・重機運搬も<br>
+                行っており、様々な現場での対応が可能です。<br>
+                お気軽にお問い合わせください。</p>
+              <p class="button-width_base01 block-right">
+                <a href="" class="button01">お問い合わせ</a>
+              </p>
+            </div>
+          </div>
+          <div class="c"></div>
+        <div class="aaa" style="height:200px;width: 200%;margin:auto;background-color: aliceblue;left:50%;transform:translate(-50%,0) rotate(-6deg);position: relative;z-index: 99;top: -130px;"></div>
+        </div><!-- ここまでjigyou02 -->
+        <div class="fixed-bg02"></div>
+        <div class="bbb"></div>
+
       </section>
-      <section class="section03 container">
-        <h2>採用情報</h2>
-        <div style="width: 800px;">
-          <img src="" alt="">
-          <img src="" alt="">
-          <img src="" alt="">
+      <section class="section03">
+        <div class="container">
+          <h2>採用情報</h2>
+          <div class="flex recruitBody">
+            <img src="./img/レタッチ1004_DJI_0196.jpg" alt="" class="recruitImage"/>
+            <div class="recruitBody_text">
+              <p>川崎開発では一緒に働く仲間を募集しています。</p>
+              <p>地域に根差した企業で働きたい、地域を良くしたい<br>
+                といった思いを持っている方を歓迎します。</p>
+              <p class="button-width_base01 block-right www">
+                <a href="" class="button01">採用情報</a>
+              </p>
+            </div>
+          </div>
         </div>
-        <p><a href="">施工実績を見る</a></p>
-        <div>
-          <img src="" alt=""><!-- 右から　すっと出てくる -->
-          <img src="" alt="">
-          <img src="" alt="">
-          <img src="" alt="">
-        </div>
-        <p>山砂・重機の運搬も行っており、様々な現場での柔軟な対応が可能です。
-          山砂は販売も行っており、○○にご利用いただけます。
-          お気軽にお問合せ下さい。</p><!-- フワッと -->
-          <p><a href="">詳しく見る</a></p><!-- フワッと -->
 
       </section>
     </main>
-
     <footer>
-      <div>
-        <img src="" alt="">
-        <p>有限会社川崎開発は、福島ファイヤーボンズを応炎しています！</p>
-      </div>
-      <div>
-        <img src="" alt="">
-        <address>〒969-1512 福島県二本松市上川崎下種田</address>
-        <p>0243-52-2246</p>
-      </div>
-      <div>
-        <ul>
-          <li>会社案内</li>
-          <li>施工実績</li>
-          <li>採用情報</li>
-          <li>お問合せ</li>
-        </ul>
+      <div class="f-container">
+        <div class="firebonds-area">
+          <img src="./img/firebonds-bnr.png" alt="" class="firebonds-bnr" />
+          <p>有限会社川崎開発は、福島ファイヤーボンズを応炎しています！</p>
+        </div>
+        <div class="f-about-area">
+          <div class="f-left">
+            <img
+              src="./img/logo_gold.png"
+              alt="有限会社　川崎開発"
+              class="f-logo_gold"
+            />
+            <address>〒969-1512 福島県二本松市上川崎下種田</address>
+            <p>0243-52-2246</p>
+            <small>Copyright© KAWASAKIKAIHATSU. All Rights Reserved.</small>
+          </div>
+          <div class="f-right">
+            <ul>
+              <li>会社案内</li>
+              <li>施工実績</li>
+              <li>採用情報</li>
+              <li>お問合せ</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
     <script
-    src="https://code.jquery.com/jquery-3.7.1.js"
-    integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
-    crossorigin="anonymous">
-  </script>
-    <script>
-$(window).scroll(function (){
-	$('.jigyou-image').each(function(){
-		var elemPos = $(this).offset().top,
-		scroll = $(window).scrollTop(),
-		windowHeight = $(window).height();
-    console.log(elemPos- windowHeight);
-    console.log(scroll);
-
-			if (scroll > elemPos - windowHeight + 500){
-				$(this).addClass('scrollin');
-gsap.to(".section02 img:nth-child(1)", { x: 1000, duration: 0.4 ,duration: 0.6,ease : "power4.out"});
-gsap.to(".section02 img:nth-child(2)", { x: 1186, duration: 0.4 ,duration: 0.4,ease : "power4.out"});
-gsap.to(".section02 img:nth-child(3)", { x: 1336, duration: 0.4 ,duration: 0.2,ease : "power4.out"});
-gsap.to(".section02 img:nth-child(4)", { x: 1526, duration: 0.4 ,duration: 0,ease : "power4.out"});
-gsap.to(":root", {'--secstion02-bg': 'polygon(0 200px , 80% 100px, 40% 90%, 0 80%)'});
-			}
-	});
-});
-
-    </script>
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.21.0/jquery.validate.min.js"
+      integrity="sha512-KFHXdr2oObHKI9w4Hv1XPKc898mE4kgYx58oqsc/JqqdLMDI4YjOLzom+EMlW8HFUd0QfjfAvxSL6sEq/a42fQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./js/script.js"></script>
+<!--     <script src="./js/gsap.js"></script>
+ -->    <script src="./js/validate.js"></script>
   </body>
 </html>
