@@ -321,6 +321,9 @@ header.scroll-nav {
   .logo_gold {
     display: block;
     width: 280px;
+    @media (max-width: 1099px) {
+      width: 215px;
+    }
   }
 }
 /* ハンバーガーメニューボタンPCの時非表示 */

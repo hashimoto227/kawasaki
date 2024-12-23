@@ -577,6 +577,7 @@
     text-shadow: 0px 3px 6px black;
     font-size: 26px;
   }
+
   .slant-bg {
     width: 100%;
     padding: 40px 0;
@@ -603,6 +604,269 @@
     }
   }
 }
+h2{
+  position: relative;
+  margin-bottom: 60px;
+}
+.h2-en{
+  font-size: 14px;color: #B40600;position: absolute;left: 50px;bottom: -6px;
+}
+
+#lower .section01{
+  margin: 140px auto 100px;
+}
+#lower section{
+  margin-bottom: 120px;
+}
+@media (max-width: 1099px) {
+  h2{
+    position: relative;
+    margin-bottom: 30px;
+  }
+  #lower .section01{
+    margin: 70px auto 50px;
+  }
+  #lower section{
+    margin-bottom: 60px;
+  }
+}
+/* 会社概要 */
+#lower .campany .kv {
+  background-image: url(../img/campany-kv.jpg);
+  background-position: bottom;
+}
+
+@media (max-width: 1099px) {
+  #lower .campany .kv {
+    background-image: url(../img/campany-kv-sp.jpg);
+  }
+}
+.massage_text{
+  max-width: 800px;
+  line-height: 35px;
+  margin: auto;
+}
+.table_area{
+  .table_row{
+    display: flex;
+    border-bottom: solid 1px #B40600;
+    & p:first-child{
+      width: 180px;
+      flex-shrink: 0;
+    }
+    p{
+      padding: 0.5em 0  0.5em 3em;
+    }
+  }
+}
+@media (max-width: 1099px) {
+  .table_area{
+    .table_row{
+      display: block;
+      border-bottom: solid 1px #B40600;
+      & p:first-child{
+        width: 100%;
+        font-weight: bold;
+        margin:1em 0 0.5em;
+      }
+      p{
+        margin: 0 0 1em;
+        padding:  0;
+        font-weight: 400;
+      }
+    }
+  }
+}
+.access_area{
+  .access_top{
+    margin-bottom: 1em;
+    display: flex;
+    .access_image{
+      width: 50%;
+      height: fit-content;
+    }
+    div{
+      text-align: center;
+      width: 50%;
+      .logo_red{
+        width: 117px;
+        display: block;
+        margin: auto;
+      }
+      .access_name{
+        border-bottom: solid 3px #B40600;
+        display: inline-block;
+        font-size: 22px;
+        padding: 1.3em 0.5em;
+        letter-spacing: 0.1em;
+        margin: 0;
+      }
+      .access_adress{
+        line-height: 30px;
+        font-weight: normal
+      }
+    }
+  }
+}
+@media (max-width: 1099px) {
+  .access_area{
+    .access_top{
+      margin-bottom: 1em;
+      display: block;
+      .access_image{
+        width: 100%;
+        height: fit-content;
+      }
+      div{
+        width: 100%;
+      }
+    }
+  }
+}
+#lower .section04{
+  background-color: #F2F4F7;padding:60px 0 120px;margin-bottom: 0;
+  .award_area{
+    ul{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1em;
+      li{
+        background-color: #ffffff;
+        width: 32%;
+        p{
+          padding: 1em 2em;
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1099px) {
+  #lower section.section04{
+    background-color: #F2F4F7;padding:30px 0 60px;margin: 0;
+    .award_area{
+      ul{
+        display: flex;
+        li{
+          background-color: #ffffff;
+          width: 47%;
+          p{
+            padding: 0.5em 1em;
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}
+/* 施工実績 */
+#lower .works .kv {
+  background-image: url(../img/works-kv.jpg);
+  background-position: bottom;
+}
+@media (max-width: 1099px) {
+  #lower .works .kv {
+    background-image: url(../img/works-kv-sp.jpg);
+  }
+}
+.works_h2{
+  font-size: 32px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 60px;
+}
+.works_list li{
+  display: flex;
+  gap: 60px;
+  margin-bottom: 60px;
+  img{
+    width: 360px;
+  }
+  div{
+    .works_name{
+      font-size: 24px;
+      font-weight: bold;
+      margin: 0 0 1.5em;
+      line-height: 1.2em;
+      &::before {
+        content: "";
+        padding-bottom: 1em;
+        display: block;
+        width: clamp(6px, 10vw, 120px);
+        border-top: solid 2px var(--color_main);
+      }
+    }
+    .works_detail{
+      line-height: 2em;
+      font-weight: 400;
+    }
+  }
+}
+@media (max-width: 1099px) {
+  .works_h2{
+    font-size: 22px;
+    margin-bottom: 30px;
+  }
+  .works_list li{
+    display: block;
+    margin-bottom: 30px;
+    img{
+      width: 100%;
+    }
+    div{
+      .works_name{
+        font-size: 18px;
+        font-weight: bold;
+        margin: 1em 0 0.5em;
+        &::before {
+          display: none;
+        }
+      }
+      .works_detail{
+        line-height: 2em;
+        font-weight: 400;
+        margin: 0;
+      }
+    }
+  }  
+}
+/* 採用情報 */
+#lower .recruit .kv {
+  background-image: url(../img/recruit-kv.jpg);
+  background-position: bottom;
+}
+@media (max-width: 1099px) {
+  #lower .recruit .kv {
+    background-image: url(../img/recruit-kv-sp.jpg);
+  }
+}
+.requirements{
+  .requirements_h3{
+    font-size: 32px;
+    font-weight: bold;
+    color: #B40600;
+    text-align: center;
+    margin: 120px auto 30px;
+    &:first-child{
+      margin: 60px auto 30px;
+    }
+  }
+  
+}
+@media (max-width: 1099px) {
+  .requirements{
+    .requirements_h3{
+      font-size: 22px;
+      font-weight: bold;
+      color: #B40600;
+      text-align: center;
+      margin: 60px auto 15px;
+      &:first-child{
+        margin: 30px auto 15px;
+      }
+    }
+  }  
+}
 /* contact */
 #lower .contact .kv {
   background-image: url(../img/contact-kv.jpg);
@@ -615,7 +879,6 @@
 }
 
 .contact .section01 {
-  margin: 200px auto 100px;
   form {
     margin-top: 60px;
     p {
