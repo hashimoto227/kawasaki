@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+  <g id="グループ_1528" data-name="グループ 1528" transform="translate(-1190 -997)">
+    <g id="グループ_1826" data-name="グループ 1826">
+      <circle id="楕円形_1" data-name="楕円形 1" cx="25" cy="25" r="25" transform="translate(1190 997)" fill="#fff"/>
+      <g id="グループ_1525" data-name="グループ 1525" transform="translate(-219.5 -254.982)">
+        <g id="グループ_1521" data-name="グループ 1521" transform="translate(-740.5 1991.5) rotate(-90)">
+          <line id="線_2" data-name="線 2" x2="10.989" y2="10.755" transform="translate(717.802 2164.5)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="1"/>
+          <line id="線_3" data-name="線 3" y1="10.288" x2="10.522" transform="translate(718.27 2175.256)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="1"/>
+        </g>
+        <text id="TOP" transform="translate(1422 1290.255)" font-size="12" font-family="Lato-Black, Lato" font-weight="800"><tspan x="0" y="0">TOP</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>

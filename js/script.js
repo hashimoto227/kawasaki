@@ -56,4 +56,20 @@ $(function () {
       $("header").removeClass("scroll-nav");
     }
   });
+
+/*画面の高さでpege-topへのリンクを呼び出す*/
+  var section =$('#page-top');
+  if(window.document.body.id === 'top'){
+    var scroll = 400
+  }else{
+    var scroll = 200
+  }
+  $(window).on('scroll', function () {
+      if ($(this).scrollTop() > scroll) {
+		section.addClass('page-top_link');
+      } else {
+      section.removeClass('page-top_link');
+    }
+  });
+
 });

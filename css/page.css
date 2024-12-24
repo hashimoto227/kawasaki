@@ -146,6 +146,9 @@
       margin-top: -3em;
       line-height: 1.8em;
       font-weight: bold;
+      width: fit-content;
+      margin-right: 0;
+      margin-left: auto;
     }
   }
 
@@ -232,23 +235,9 @@
       margin: auto;
       position: relative;
       img {
-        width: 268px;
+        width: 800px;
         position: absolute;
-      }
-      img:nth-child(1) {
-        top: 40px;
-      }
-      img:nth-child(2) {
-        top: -48px;
-        left: 186px;
-      }
-      img:nth-child(3) {
-        top: -12px;
-        left: 336px;
-      }
-      img:nth-child(4) {
-        top:-88px;
-        left: 516px;
+        top: -100px;
       }
     }
     &::before {
@@ -265,7 +254,7 @@
     }
     .jisseki_btn{
       position: relative;
-      top: 400px;
+      top: 360px;
       left: 0;right: 0;
       margin: auto;
     }
@@ -445,11 +434,13 @@
         padding: 0 20px;
         text-align: left;
         p{
-          font-size: 18px;
+          font-size: 16px;
           text-shadow: 0 3px 6px rgb(0, 0, 0);
           line-height: 1.5em;
+          margin-left: 1em;
         }
         p:first-child{
+          margin-left: 0em;
           font-size: 22px;
           margin-bottom: 0.5em;
         }
@@ -506,6 +497,7 @@
       }
       p:first-child{
         font-size: 28px;
+        margin-top: 0;
       }
     }
     .www{
@@ -528,12 +520,15 @@
         margin: 0 calc(50% - 50vw);
       }
       .recruitBody_text{
+        margin-top: -6.5em;
         font-weight: bold;
         color: #B40600;
         p{
           line-height: 1.8em;
+          color: black;
         }
         p:first-child{
+          color: #B40600;
           font-size: 18px;
         }
       }
@@ -565,6 +560,8 @@
     text-shadow: 0px 3px 6px black;
     font-size: 56px;
     height: 72px;
+    font-weight: bold;
+    letter-spacing: 2px;
   }
   .h1-en {
     display: block;
@@ -609,7 +606,7 @@ h2{
   margin-bottom: 60px;
 }
 .h2-en{
-  font-size: 14px;color: #B40600;position: absolute;left: 50px;bottom: -6px;
+  font-size: 14px;color: #B40600;position: absolute;left: 50px;bottom: -10px;
 }
 
 #lower .section01{
@@ -653,6 +650,7 @@ h2{
     & p:first-child{
       width: 180px;
       flex-shrink: 0;
+      font-weight: bold;
     }
     p{
       padding: 0.5em 0  0.5em 3em;
@@ -700,9 +698,10 @@ h2{
         padding: 1.3em 0.5em;
         letter-spacing: 0.1em;
         margin: 0;
+        font-weight: bold;
       }
       .access_adress{
-        line-height: 30px;
+        line-height: 26px;
         font-weight: normal
       }
     }
@@ -736,7 +735,7 @@ h2{
         p{
           padding: 1em 2em;
           margin: 0;
-        }
+      }
       }
     }
   }
@@ -784,10 +783,12 @@ h2{
   }
   div{
     .works_name{
+      font-family: "Noto Sans JP", serif;
       font-size: 24px;
       font-weight: bold;
       margin: 0 0 1.5em;
-      line-height: 1.2em;
+      line-height: 1.4em;
+      color: #3B4043;
       &::before {
         content: "";
         padding-bottom: 1em;
@@ -799,6 +800,12 @@ h2{
     .works_detail{
       line-height: 2em;
       font-weight: 400;
+      p{
+        margin: 0 0 0.7em;
+      }
+      .works_detail_head{
+        padding-right: 1em;font-weight: bold;
+      }
     }
   }
 }
@@ -815,6 +822,7 @@ h2{
     }
     div{
       .works_name{
+        font-family: "Noto Sans JP", serif;
         font-size: 18px;
         font-weight: bold;
         margin: 1em 0 0.5em;
@@ -857,7 +865,6 @@ h2{
   .requirements{
     .requirements_h3{
       font-size: 22px;
-      font-weight: bold;
       color: #B40600;
       text-align: center;
       margin: 60px auto 15px;
